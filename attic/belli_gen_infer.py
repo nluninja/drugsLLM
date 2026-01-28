@@ -78,7 +78,7 @@ text = tokenizer.apply_chat_template(
     tokenize=False,
     truncation=True,
     max_length=1024,
-    add_generation_prompt=False,
+    add_generation_prompt=True,
     # return_overflowing_tokens=True,
     # return_length=True,
 )

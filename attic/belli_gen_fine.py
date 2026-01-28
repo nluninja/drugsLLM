@@ -1,7 +1,6 @@
 import os
 
-import pandas as pd
-from peft import LoraConfig, TaskType, get_peft_config, get_peft_model
+from peft import LoraConfig, TaskType, get_peft_model
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
@@ -10,16 +9,10 @@ from transformers import (
     Trainer,
     TrainingArguments,
 )
+from datasets import load_dataset
 
-import datasets
-from datasets import Dataset, DatasetDict, load_dataset
-from trl import SFTConfig, SFTTrainer
-
-# os.environ["NCCL_P2P_DISABLE"] = "1"
-# os.environ["NCCL_IB_DISABLE"] = "1"
-
-
-hf_token = "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"
+# Set HF_TOKEN environment variable before running
+hf_token = os.environ.get("HF_TOKEN", "")
 
 
 file_name = "dataset_farmaci_qaNEW 1.json"
