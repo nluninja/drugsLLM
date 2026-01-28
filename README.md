@@ -31,6 +31,7 @@ The project employs:
 ```
 drugsLLM/
 ├── README.md                              # Project documentation
+├── LICENSE                                # MIT License
 ├── drugLLM_training.ipynb                 # Training notebook (Google Colab)
 ├── drugLLM_evaluation.ipynb               # Evaluation notebook
 ├── datasets/
@@ -252,7 +253,9 @@ This model is developed for educational and research purposes only. The informat
 
 ## License
 
-This project is intended for academic and research use. The base Llama model is subject to Meta's Llama Community License.
+This project is released under the MIT License. See [LICENSE](LICENSE) for details.
+
+**Note**: The fine-tuned model weights are derived from Meta's Llama 3.1 and are subject to the [Meta Llama 3.1 Community License](https://llama.meta.com/llama3_1/license/).
 
 ---
 
